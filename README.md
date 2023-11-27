@@ -1,5 +1,5 @@
 # ProtoFGL
-![framework](./experiment.assets/framework.png)
+![framework](./experiment.assets/framework0711.pdf.png)
 
 An illustration of the overall process of ProtoFGL. (1) Local prototype learning (client-side): For node heterogeneity, we conduct a category-fair sampling for all node categories in the local graph to construct the meta-learning tasks. For structure heterogeneity, we train $\mathit{Encoder}$ and $\mathit{Scorer}$ to score the importance of nodes based on the edge connection. For representation heterogeneity, node representations of each category are aggregated into a local prototype separately weighted by node importance scores. Besides, we alleviate representation heterogeneity through distilling the knowledge from the global prototypes. (2) Global prototype aggregation (server-side): The server aggregates local prototypes and model parameters based on the local nodes' labels and quantities, and then sends the learned global prototypes and model parameters to clients.
 
